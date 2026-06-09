@@ -1,188 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Michoacana Frutimas</title>
-
-<style>
-body {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#fff5f7;
-}
-
-/* HEADER */
-header {
-  background:#ff2f92;
-  color:white;
-  text-align:center;
-  padding:15px;
-  position:sticky;
-  top:0;
-  z-index:1000;
-}
-
-header img {
-  max-width:120px;
-  display:block;
-  margin:0 auto;
-}
-
-/* NAV */
-nav {
-  margin-top:10px;
-}
-
-nav a {
-  color:white;
-  margin:0 10px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-/* HERO */
-.hero {
-  text-align:center;
-  padding:40px 20px;
-}
-
-.hero h2 {
-  color:#ff2f92;
-}
-
-/* BUTTONS */
-.btn {
-  display:inline-block;
-  margin-top:15px;
-  padding:12px 20px;
-  background:#ff2f92;
-  color:white;
-  border-radius:10px;
-  text-decoration:none;
-}
-
-/* SECTIONS */
-.section {
-  padding:40px 20px;
-  text-align:center;
-}
-
-/* MENU */
-.menu-items {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:20px;
-}
-
-.card {
-  background:white;
-  border-radius:15px;
-  padding:15px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.card img {
-  width:100%;
-  height:150px;
-  object-fit:cover;
-  border-radius:10px;
-}
-
-.price {
-  color:#ff2f92;
-  font-weight:bold;
-}
-
-/* FOOTER */
-footer {
-  background:#ff2f92;
-  color:white;
-  text-align:center;
-  padding:20px;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Michoacana Frutimas | Mexican Ice Cream & Treats</title>
+  <meta name="description" content="La Michoacana Frutimas in Annapolis, MD. Ice cream, paletas, mangonadas, aguas frescas, fruit cups, snacks, and desserts." />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <header class="top-wave"></header>
 
-<header>
-  <img src="logo.png">
-  <h1>La Michoacana Frutimas</h1>
+  <nav class="navbar">
+    <a class="brand" href="#home">
+      <img src="assets/logo.png" alt="La Michoacana Frutimas logo" />
+    </a>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#menu">Menu</a>
-    <a href="#contact">Contact</a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About Us</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit Us</a>
+      <a href="#contact">Contact</a>
+      <a class="order-btn" href="#visit">Order Now</a>
+    </div>
   </nav>
-</header>
 
-<section class="hero" id="home">
-  <h2>Fresh • Sweet • Delicious 🍦</h2>
-  <p>Authentic Mexican ice cream, paletas & fruit treats</p>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="script">Authentic</p>
+        <h1>Mexican Treats</h1>
+        <h2>Made With Love</h2>
+        <p class="hero-description">
+          Ice cream, paletas, mangonadas, aguas frescas, fruit cups and more!
+        </p>
 
-  <a href="tel:1234567890" class="btn">📞 Call Now</a>
-</section>
+        <div class="hero-buttons">
+          <a class="primary-btn" href="#visit">📍 Visit Us</a>
+          <a class="outline-btn" href="#contact">📸 Follow Us</a>
+        </div>
+      </div>
 
-<section class="section" id="menu">
-  <h2>Our Menu</h2>
+      <div class="hero-products">
+        <div class="product mangonada">🥭</div>
+        <div class="product icecream">🍦</div>
+        <div class="product paleta">🍓</div>
+        <div class="product fruitcup">🍉</div>
+        <img class="hero-logo-badge" src="assets/logo.png" alt="La Michoacana Frutimas logo badge" />
+      </div>
+    </section>
 
-  <div class="menu-items">
+    <section id="menu" class="menu-section">
+      <h2 class="section-title">🌿 Our Menu 🌿</h2>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb">
-      <h3>Ice Cream</h3>
-      <p class="price">$3.99</p>
-    </div>
+      <div class="menu-row">
+        <article class="menu-card">
+          <div class="menu-photo icecream-bg">🍨</div>
+          <div class="menu-label">Ice Cream</div>
+        </article>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e">
-      <h3>Paletas</h3>
-      <p class="price">$2.99</p>
-    </div>
+        <article class="menu-card">
+          <div class="menu-photo paletas-bg">🍭</div>
+          <div class="menu-label">Paletas</div>
+        </article>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3">
-      <h3>Fruit Cups</h3>
-      <p class="price">$5.99</p>
-    </div>
+        <article class="menu-card">
+          <div class="menu-photo mangonadas-bg">🥭</div>
+          <div class="menu-label">Mangonadas</div>
+        </article>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1553531889-56cc480ac5cb">
-      <h3>Aguas Frescas</h3>
-      <p class="price">$3.50</p>
-    </div>
+        <article class="menu-card">
+          <div class="menu-photo aguas-bg">🥤</div>
+          <div class="menu-label">Aguas Frescas</div>
+        </article>
 
-  </div>
-</section>
+        <article class="menu-card">
+          <div class="menu-photo fruit-bg">🍓</div>
+          <div class="menu-label">Fruit Cups</div>
+        </article>
 
-<section class="section" id="contact">
-  <h2>Visit Us</h2>
+        <article class="menu-card">
+          <div class="menu-photo snacks-bg">🌽</div>
+          <div class="menu-label">Snacks</div>
+        </article>
 
-  <p><strong>📍 626 Admiral Dr Unit A<br>Annapolis, MD 21401</strong></p>
+        <article class="menu-card">
+          <div class="menu-photo desserts-bg">🍰</div>
+          <div class="menu-label">Desserts</div>
+        </article>
+      </div>
+    </section>
 
-  <p>📞 (123) 456-7890</p>
+    <section id="about" class="about-card">
+      <h2>Made to feel fun, fresh, and local.</h2>
+      <p>
+        A colorful place for families, friends, and anyone craving something sweet,
+        refreshing, or spicy-sweet.
+      </p>
+    </section>
 
-  <p><strong>Hours:</strong><br>
-  Mon–Fri: 12PM – 9PM<br>
-  Sat–Sun: 11AM – 10PM</p>
+    <section id="gallery" class="gallery-section">
+      <h2 class="section-title">Sweet Favorites</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">🍦<span>Creamy Ice Cream</span></div>
+        <div class="gallery-item">🍭<span>Colorful Paletas</span></div>
+        <div class="gallery-item">🥭<span>Fresh Mangonadas</span></div>
+        <div class="gallery-item">🥤<span>Aguas Frescas</span></div>
+      </div>
+    </section>
 
-  <a href="https://www.google.com/maps/dir/?api=1&destination=626+Admiral+Dr+Unit+A,+Annapolis,+MD" 
-     target="_blank" class="btn">
-     Get Directions
-  </a>
+    <section id="visit" class="visit-section">
+      <div class="visit-info">
+        <h2>📍 Visit Us</h2>
+        <p class="address">
+          626 Admiral Dr, Suite A<br>
+          Annapolis, MD 21401
+        </p>
 
-  <div style="margin-top:20px;">
-    <iframe 
-      src="https://www.google.com/maps?q=626+Admiral+Dr+Unit+A,+Annapolis,+MD&output=embed"
-      width="100%" height="300" style="border:0; border-radius:15px;">
-    </iframe>
-  </div>
-</section>
+        <a class="primary-btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=626+Admiral+Dr+Suite+A+Annapolis+MD+21401">
+          ✨ Get Directions
+        </a>
 
-<footer>
-  <p>© 2026 La Michoacana Frutimas</p>
-</footer>
+        <div class="follow">
+          <h3>Follow Us</h3>
+          <div class="socials">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="TikTok">♪</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="map-box">
+        <iframe
+          title="Map to La Michoacana Frutimas"
+          src="https://www.google.com/maps?q=626%20Admiral%20Dr%20Suite%20A%20Annapolis%20MD%2021401&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div>📞 Add phone number</div>
+    <div>🕘 Add business hours</div>
+    <div>✉️ Add email address</div>
+    <p>© 2026 La Michoacana Frutimas. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
